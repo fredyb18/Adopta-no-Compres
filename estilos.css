@@ -84,20 +84,8 @@ align-items: center;
     width: 850px;
 }
 
-.nosmg{
-    height: 600px;
-}
 
-.contenido {
-    align-items: center;
-    margin-top: 30px;
-    display: grid; 
-    grid-template-columns: 2.5fr 3fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "nosimg, nosinf"; 
-  }
+
   .txtp{
     text-align: center;
 
@@ -135,22 +123,6 @@ align-items: center;
   .ts2 { grid-area: ts2; }
   
   
-  .contp {
-    display: grid; 
-    grid-template-columns: 3fr 2.5fr; 
-    grid-template-rows: 1fr [infop]; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "infopq imgpq"; 
-  }
-  .infopq { grid-area: infopq; }
-  .imgpq { grid-area: imgpq; }
-  .pqimg{
-    width: 900px;
-  }
-  .txtpq{
-    font-size: 20px;
-  }
   .bm{
     margin-bottom:20px ;
     margin-top: 20px;
@@ -284,3 +256,85 @@ align-items: center;
   font-size: 20px;
   color: rgb(0, 65, 185);
 }
+
+  .contenidonos {
+    margin-top: 30px;
+    display: grid; 
+    grid-template-columns: 2.5fr 3fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "nosimg, nosinf"; 
+  
+}
+.nosmg{
+  height: 600px;
+}
+.contp {
+  display: grid; 
+  grid-template-columns: 3fr 2.5fr; 
+  grid-template-rows: 1fr [infop]; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "infopq imgpq"; 
+}
+.infopq { grid-area: infopq; }
+.imgpq { grid-area: imgpq; }
+.pqimg{
+  width: 900px;
+}
+.txtpq{
+  font-size: 20px;
+}
+@media only screen and (max-width: 768px){
+  *{
+    padding: 2px;
+  }
+  .Titulo{
+    font-size: 50px;
+  }
+
+  .mn{
+    font-size: 20px;
+  }
+  .nosmg{
+    height: 380px;
+  }
+  .nosinf{
+    font-size: 20px;
+  }
+  .contenidonos {
+    margin-top: 30px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "nosimg"
+      "nosinf"; 
+}
+.contp {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr ; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "infopq "
+    "imgpq"; 
+}
+.infopq{
+  width: 700px;
+}
+.txtpq{
+  font-size: 20px;
+}
+
+.pqimg{
+  width: 650px;
+}
+}
+
+
+
+
+
