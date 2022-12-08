@@ -1,0 +1,27 @@
+{
+  "name": "2da-entrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wow.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": 
+"node-sass --include-path scss sass/sass.scss sassestilos.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredyb18/Adopta-no-Compres.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredyb18/Adopta-no-Compres/issues"
+  },
+  "homepage": "https://github.com/fredyb18/Adopta-no-Compres#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

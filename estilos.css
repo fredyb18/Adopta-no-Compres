@@ -40,12 +40,23 @@ main{
     display: inline;
     font-size: 20px;
 }
+.Nv{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.Menu{
+  display: flex;
+  flex-flow: row wrap;
+}
 .Menu li a{
     color: azure;
     text-decoration:none;
 }
 .Menu li a:hover{
-color: aqua;
+color:rgb(125, 184, 240);
+text-decoration: none;
 }
 
 .dv11{
@@ -70,7 +81,7 @@ color: aqua;
 
  .dv{
     height:400px ;
-    justify-content: space-evenly;
+  
  }
  .dvft2{
     display: flex;
@@ -270,6 +281,7 @@ align-items: center;
 .nosmg{
   height: 600px;
 }
+
 .contp {
   display: grid; 
   grid-template-columns: 3fr 2.5fr; 
@@ -286,55 +298,159 @@ align-items: center;
 .txtpq{
   font-size: 20px;
 }
-@media only screen and (max-width: 768px){
-  *{
-    padding: 2px;
+@media only screen and (max-width: 320px){
+  *{margin: 3px;
+  padding: 2.5px;}
+  header{
+    flex-flow: row wrap;
   }
+
+
   .Titulo{
-    font-size: 50px;
+    font-size:35px;
+    align-self: center;
   }
 
-  .mn{
-    font-size: 20px;
-  }
-  .nosmg{
-    height: 380px;
-  }
-  .nosinf{
-    font-size: 20px;
-  }
-  .contenidonos {
-    margin-top: 30px;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "nosimg"
-      "nosinf"; 
-}
-.contp {
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr ; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "infopq "
-    "imgpq"; 
-}
-.infopq{
-  width: 700px;
-}
-.txtpq{
-  font-size: 20px;
-}
+  .infop {  
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr [infop];
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tp tp"
+      "ts1 ts1"
+      "ts2 ts2";
+      }
+      .tp { grid-area: tp; 
+        font-size: 20px;
+        font-weight: bold;
+      }
+  
+      .ts1 { grid-area: ts1; 
+        font-size: 15px;
+        font-weight: bold;}
+      
+      .ts2 { grid-area: ts2; 
+        font-size: 15px;
+        font-weight: bold;}
+      .txtp{
+        text-align: center;}
 
-.pqimg{
-  width: 650px;
-}
-}
+        .contp {
+          display: grid; 
+          grid-template-columns: 1fr; 
+          grid-template-rows: 3fr 2.5 [infop]; 
+          gap: 0px 0px; 
+          grid-template-areas: 
+            "infopq "
+            "imgpq"; 
+            }
+
+      .infopq { grid-area: infopq; }
+      .imgpq { grid-area: imgpq; }
+      .pqimg{
+        width:100%;
+      }
+
+      .txtpq{
+        font-size: 18px;
+      }
+        
+
+
+        .sctcm {  
+          justify-content: center;
+          align-items: center;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: [infop] 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "txtcm1"
+            "imgcm1"
+            "txtcm2"
+            "imgcm2"
+            "txtcm3"
+            "imgcm3"
+            "txtcm4 "
+            "imgcm4";
+            
+            }
+            .imgcm{
+              height: 250px;
+            }
+            .txcm{
+              color: black;
+            }
+            .titulocm{
+              font-weight: bold;
+              color: rgb(62, 0, 133);
+            }
+            .txtcm{
+              font-size: 20px;
+              color: rgb(0, 65, 185);
+            }
+        
+
+            .sctdd {  display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: [infop] 1fr 1fr .3fr 1fr 1fr .3fr 1fr 1fr .3fr 1fr 1fr .3fr 1fr 1fr .3fr 1fr 1fr .3fr;
+              gap: 0px 0px;
+              grid-auto-flow: row;
+              grid-template-areas:
+                "ej1 "
+                "im1"
+                 "lk1"
+                 "ej2"
+                 "im2"
+                 "lk2"
+                 "ej3"
+                 "im3"
+                 "lk3"
+                 "ej4"
+                 "im4"
+                 "lk4"
+                 "ej5"
+                 "im5"
+                 "lk5"
+
+                 ;
+                 }
+                 .ddimg{
+                  height: auto;
+                  width: 100%;
+                }
+                .ddimg5{
+                  height: auto;
+                  width: 100%;
+                }
+                
+
+                .contenidonos {
+                  display: grid; 
+                  grid-template-columns: 1fr; 
+                  grid-template-rows: 3fr 2.5 [infop]; 
+                  gap: 0px 0px; 
+                  grid-template-areas: 
+                    "nosimg "
+                    "nosinf"; 
+                    }
+
+                    .nosmg{
+                      height: auto;
+                      width: 100%;
+                    }
+                    .nostx{
+                      font-size: 23px;
+                    }
 
 
 
+
+
+              }
 
 
