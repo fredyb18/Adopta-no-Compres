@@ -1,0 +1,10 @@
+/*variables y eso*/
+$color1: rgb(52, 0, 100);
+$color2: rgb(74, 44, 138);
+
+@mixin flex-rowwrap-center-center{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
